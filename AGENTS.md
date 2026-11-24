@@ -21,3 +21,10 @@
 - The `nx-generate` skill handles generator discovery internally - don't call nx_docs just to look up generator syntax
 
 <!-- nx configuration end-->
+
+## Learned User Preferences
+
+## Learned Workspace Facts
+
+- Workspace uses pnpm 11; `strictDepBuilds` defaults to true, so unreviewed lifecycle scripts fail install with `ERR_PNPM_IGNORED_BUILDS`. Approve needed builds via `allowBuilds` in `pnpm-workspace.yaml` (`onlyBuiltDependencies` was removed in v11). Currently allowed: `nx`, `@swc/core`.
+- Continual-learning hook state (`.cursor/hooks/state/continual-learning.json`, `continual-learning-index.json`) is gitignored explicitly; durable agent memory lives in `AGENTS.md` only.

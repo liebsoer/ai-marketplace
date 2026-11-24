@@ -2,3 +2,8 @@ packages:
   - 'packages/*'
   - 'skills/*'
   - 'agents/*'
+
+# pnpm 11: unreviewed lifecycle scripts fail install (ERR_PNPM_IGNORED_BUILDS)
+allowBuilds:
+  nx: true
+  '@swc/core': true
